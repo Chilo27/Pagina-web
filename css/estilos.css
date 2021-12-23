@@ -1,0 +1,270 @@
+
+  /* Inicio */
+
+
+.encabezado {
+    background: linear-gradient(to right, #141e30, #243b55);
+    padding-top: 5rem;
+  }
+
+  .navbar-nav {
+    text-align: center; 
+  }
+
+  .inicio {
+    color: #FFffff;
+    font-size: 50px;
+    font-family: 'Krub', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 3rem;
+  }
+
+  .inicio__titulo{
+      color: #FFffff;
+      text-shadow: 1px 2px 2px black, 0 0 25px rgb(12, 192, 81), 0 0 5px rgb(255, 81, 0);
+      text-align: center;
+      padding-top: 3rem;
+  }
+
+  
+
+  .inicio__article{
+      padding-top: 6rem;
+      padding-left: 15rem;
+  }
+
+  div.galeria{
+      margin: 10px 20px;
+      box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0,0,0,0.19);
+      float: left;
+      width: 350px;
+  }
+
+  div.galeria img{
+      width: 100%;
+      height: auto;
+  }
+
+  div.galeria:hover{
+      border: 1px solid lightcoral;
+      transform: rotate(-3deg);
+  }
+
+  div.pie{
+      text-align: center;
+      text-shadow: 2px 2px 5px rgb(211, 121, 3);
+      padding: 10px;
+  }
+
+  
+
+  /* CONTACTO */
+
+  .contacto{
+    background: linear-gradient(to right, #141e30, #243b55);
+    padding: 4rem;
+  }
+
+  .contacto__titulo{
+    color: #FFffff;
+    font-size: 50px;
+    font-family: 'Krub', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 2rem;
+  }
+
+  .contacto__seccion{
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    padding: 8rem;
+  }
+
+  body {
+    background: url(carro-gps.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: monospace;
+}
+
+form {
+    width: 450px;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton{
+    background: #31384A;
+    color: #fff;
+    padding: 20px;
+}
+
+#boton:hover {
+    cursor: pointer;
+}
+
+
+@media (max-width:480px) {
+    form{
+        width: 100%;
+    }
+}
+
+/* FOTOS */
+
+
+.containerr a{
+    padding: 10px;
+}
+
+.fotos_seccion{  
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    padding: 8rem;
+}
+
+.container{
+  width: 90%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+}
+
+
+.item{
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.095);
+  
+  transition: all 300ms;
+  
+  position: relative;
+}
+
+
+.item::after {
+  content: "";
+  background-color: rgba(179, 229, 252, .1);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  transform: scale(0);
+  transition: all 300ms;
+  opacity: 0;
+}
+
+.item:hover:after{
+  opacity: 1;
+  transform: scale(1);
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item-text{
+  padding: 1em;
+}
+
+
+.item-img{
+  max-width: 100%;
+  display: block;
+}
+
+
+@media screen and (min-width: 590px) {
+  
+  .container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+
+
+@media screen and (min-width: 960px) {
+  
+  .container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+}
+
+/* SERVICIOS */
+
+
+.servicios{
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
+
+.carousel{
+ width: 1200px;
+ margin: auto;
+ padding-top: 2rem;
+ padding-bottom: 2rem;
+}
+
+@media (max-width: 768px){
+  .carousel{
+    width: 600px;
+  }
+}
+
+
+
+/* Nosotros */
+
+
+
+.nosotros{
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  padding-bottom: 4rem;
+}
+
+
+
+.nosotros_p{
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  color: #FFffff;
+  font-style: italic;
+  text-align: center;
+  font-size: 23px;
+}

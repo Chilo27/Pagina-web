@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+       <title>Formulario de Contacto</title>
+       <meta charset="UTF-8">
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+       <link rel="stylesheet" href="../css/estilos.css">
+       
+   </head>
+   <body>
+      
+    <header class="contacto">
+        <h1 class="contacto__titulo">CONTACTO</h1>
+      </header>
+
+      <div class="barras">
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                  <img src="../img/logo.png" alt="logo" width="50px">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="servicios.html">Servicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="fotos.html">Fotos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <section class="contacto__seccion">
+
+        <form>
+            <h2>CONTACTENOS</h2>
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="text" name="apellidos" placeholder="Apellidos" required>
+            <input type="text" name="correo" placeholder="Correo" required>
+            <input type="text" name="telefono" placeholder="Teléfono" required>
+            <input type="text" name="asunto" placeholder="Asunto" required>
+            <textarea name="mensaje" placeholder="Escriba aqui su mensaje" required></textarea>
+            <input type="submit" value="ENVIAR" id="boton">
+        </form>
+
+
+    </section>
+
+        <footer class="bg-dark text-center text-white">
+            <div class="containerr p-4 pb-0">
+              <h5 class="text-uppercase">Links</h5>
+      
+              <ul class="list-unstyled mb-4">
+                <div>
+                  <a href="../index.html" class="text-white col footer">Inicio</a>
+                  <a href="servicios.html" class="text-white col footer">Servicios</a>
+                  <a href="contacto.html" class="text-white col footer">Contacto</a>
+                  <a href="nosotros.html" class="text-white col footer">Nosotros</a>
+                  <a href="fotos.html" class="text-white col footer">Fotos</a>
+                </div>
+              </ul>
+            </div>
+      
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2021 Copyright Taller Mecanica Mora 
+            </div>
+           
+          </footer>
+
+
+   </body>
+</html>
